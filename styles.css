@@ -71,14 +71,14 @@ header {
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
-  gap: 1.25rem 1.5rem;
+  gap: 1rem 1rem;
   margin: 0 20px;
 }
 
 .item, .itemed, .itemwe, .itemex {
   background: #fff;
-  width: 11rem;
-  height: 11rem;
+  width: 10rem;
+  height: 10rem;
   padding: .75rem;
   border: 2px solid;
   text-align: center;
