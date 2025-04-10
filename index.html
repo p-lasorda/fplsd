@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPLSD</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">FPLSD</a> &#10072; <span style="color:#0084ff;">Editorial</span> &#10072; <span style="color: #fd0065;">Web</span> &#10072; <span style="color: #24dc30;">Exposiciones</span> 
+      </ul>
+    </nav>
+  </header>
+  <div class="contenedor">
+    <div class="texto">
+      <h2>Fundación Publicaciones La Sorda</h2>
+      <p>La Sorda es un proyecto editorial alternativo y multidisciplinar que pretende movilizar la producción de pensamiento desde amplias y generosas perspectivas de divulgación basadas en el diálogo latente entre disciplinas, autores, territorios, prácticas e ideas. El proceso editorial de La Sorda concibe los textos como una producción de sentido que no se limita a la palabra escrita. En La Sorda, hablamos con las manos.</p>
+    </div>
+    <div class="imagen">
+      <img src="assets/hero-vector.svg">
+    </div>
+  </div>
+  <main>
+    <section class="galeria">
+      <div class="item">Proyecto 1</div>
+      <div class="itemed" onclick="abrirPopup('popup2')">Proyecto 2</div>
+      <div class="item">Proyecto 3</div>
+      <div class="item">Proyecto 4</div>
+      <div class="item">Proyecto 5</div>
+      <div class="itemwe">Proyecto 1</div>
+      <div class="item">Proyecto 2</div>
+      <div class="itemex">Proyecto 3</div>
+      <div class="item">Proyecto 4</div>
+      <div class="item">Proyecto 5</div>
+      <div class="item">Proyecto 1</div>
+      <div class="item">Proyecto 2</div>
+      <div class="item">Proyecto 3</div>
+      <div class="item">Proyecto 4</div>
+      <div class="item">Proyecto 5</div>
+    </section>
+  </main>
+
+<!-- Popups -->
+<div id="popup2" class="popup">
+  <div class="popup-content">
+    <span class="cerrar" onclick="cerrarPopup('popup2')">&times;</span>
+    <div class="popup-grid">
+      <div class="popup-galeria">
+        <img src="assets/hero-vector.svg" alt="Imagen 1">
+        <img src="assets/hero-vector.svg" alt="Imagen 2">
+        <img src="assets/hero-vector.svg" alt="Imagen 3">
+      </div>
+      <div class="popup-texto">
+        <h3>Titulo de libro: La Restitución del Objeto. De la deconstrucción del objeto pictórico a la hiper-estetización del mundo de los objetos</h3>
+        <p>Descripción: Este artículo se ocupa de la transformación del estatuto del objeto y de la obra de arte, y se desarrolla a partir de tres momentos: el primero aborda una genealogía de la representación y la belleza, que permite comprender cómo lejos del horizonte imitativo de la representación perspectiva del arte -que culminará en el Impresionismo- las vanguardias esgrimen para la práctica artística, la emancipación del mundo del objeto y en este sentido suscitan su disolución; el segundo momento expone que el Constructivismo y la Bauhaus, proponen la vuelta al objeto como la estrategia para un arte verdadero, en tanto el artista debe estar al servicio de la producción social y en el objeto se da la feliz alianza de lo bello y lo útil, por lo que se restituye el objeto al universo del arte por vía del diseño; y por último, el artículo propone que un número importante de obras de arte contemporáneo se inscribe en la noción de hiperobjeto, en tanto objetos ambiguos que intentan contrarrestar el fin del arte a partir de una saturación del objeto, resultado de constituirse en obras diseñadas, es decir, en ornamentos con la función de obra de arte.</p>
+        <p><strong>Autor:</strong> Alberto Carlos Romero Moscoso</p>
+        <p><strong>ISBN:</strong> 978-958-46-6269-9a</p>
+        <p><strong>Publicado:</strong> 2015</p>
+        <p>Número de edición: 1</p>
+        <p>Número de páginas: 52</p>  
+        <p>Tiraje: 200 ejemplares</p>
+        <p>Tamaño: 17.5x12.5 cm.</p>
+        <p>Acabados: Tapa blanda</p>
+        <p>Soporte: Impreso</p>
+        <p>Idioma: Español</p>  
+        <p>Ciudad: Bogotá</p>  
+        <p>Fe de erratas: Página 48, Panofsky, Edwin. por: Panofsky, Erwin. Página 39, Nota al pie 59, postestétrico. por: post estético.</p>  
+        <p>Perfil del autor: Artista plástico y profesor interesado en temas de filosofía, arte y estética contemporánea.</p>  
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="textoalea">Recomendado 
+  <div id="caja" class="caja-texto">Cargando...</div>
+  <script>
+    const frases = [
+      {
+        texto: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Donec luctus ultricies ligula vitae commodo. <b>Fusce dui est,</b> commodo quis placerat ac, dictum vitae nunc. Donec eget sapien vitae purus tempor cursus ut vitae libero. Integer hendrerit tincidunt purus pellentesque convallis. Morbi et erat quis elit dignissim semper vel ut lectus. In quis est ipsum. Ut viverra enim non augue blandit, ac varius eros pellentesque. Suspendisse eu scelerisque lectus. <br> <i>Sed pretium vestibulum augue</i> in dignissim est consequat ut.",
+        enlace: "https://es.wikipedia.org/wiki/Pablo_Picasso"
+      },
+      {
+        texto: "La tecnología es mejor cuando reúne a las personas. - Matt Mullenweg",
+        enlace: "https://ma.tt/"
+      },
+      {
+        texto: "La ciencia no solo es una disciplina del conocimiento, sino también una forma de pensar. - Carl Sagan",
+        enlace: "https://es.wikipedia.org/wiki/Carl_Sagan"
+      },
+      {
+        texto: "En la naturaleza nada existe solo. - Rachel Carson",
+        enlace: "https://es.wikipedia.org/wiki/Rachel_Carson"
+      },
+      {
+        texto: "El medio es el mensaje. - Marshall McLuhan",
+        enlace: "https://es.wikipedia.org/wiki/Marshall_McLuhan"
+      }
+    ];
+
+    function mostrarTextoAleatorio() {
+      const random = Math.floor(Math.random() * frases.length);
+      const seleccion = frases[random];
+
+      const caja = document.getElementById("caja");
+      caja.innerHTML = `
+        ${seleccion.texto}
+        <a href="${seleccion.enlace}" target="_blank">Leer más</a>
+      `;
+    }
+
+    window.onload = mostrarTextoAleatorio;
+  </script>
+</div>
+
+<section class="formulario">
+  <h2>Contacto</h2>
+  <form action="https://formsubmit.co/info@publicacioneslasorda.org" method="POST">
+    <input type="text" id="nombre" name="name" placeholder="Nombre" required>
+    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+    <textarea id="mensaje" name="message" rows="3" placeholder="Let's talk for something special. I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+  <footer>
+    <p>2025 &#10072; FPLSD &#10072; Bogotá, Colombia &#10072; info@publicacioneslasorda.org</p>
+  </footer>
+
+  <script>
+    function abrirPopup(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+  
+    function cerrarPopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+  
+    // Cerrar al hacer clic fuera del popup
+    window.onclick = function(event) {
+      if (event.target.classList.contains('popup')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
+  
+
+</body>
+</html>
