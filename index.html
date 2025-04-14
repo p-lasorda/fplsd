@@ -6,6 +6,8 @@
   <title>FPLSD</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 <body>
 
@@ -13,11 +15,14 @@
   <header class="navbar">
     <div class="navbar-container">
       <div class="logo" onclick="abrirPopup('popups')"><img src="assets/fplsd-cara2-24.svg" alt="La Sorda" /></a><h3>FPLSD</h3></div>
-      <nav class="nav-links">
-        <a href="#"><img src="assets/ico-editorial.svg" alt="Editorial" /></a>
-        <a href="#"><img src="assets/ico-web.svg" alt="Web" /></a>
-        <a href="#"> <img src="assets/ico-expo.svg" alt="Exposiciones" /></a>
-      </nav>
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+        <div class="tooltip"><span class="material-symbols-outlined">menu_book</span><span class="tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor</span></div>
+
+      
+
+        <span class="material-symbols-outlined">web_traffic</span>
+        <span class="material-symbols-outlined">deployed_code</span>
+      </div>
     </div>
   </header>
 <!-- Galeria -->
@@ -51,13 +56,13 @@
       <div class="item2">Proyecto 4</div>
       <div class="item2">Proyecto 3</div>
       <div class="item2">Proyecto 2</div>
-      <div class="item1" onclick="abrirPopup('popup1')"><div class="project-info"><img src="assets/ico-editorial.svg" class="filter-white"/><br>La Restitución del Objeto. De la deconstrucción&#8230</div></div>
+      <div class="item1" onclick="abrirPopup('popup1')"><div class="project-info"><span class="material-symbols-outlined">menu_book</span><img class="filter-white"/><br>La Restitución del Objeto. De la deconstrucción&#8230</div></div>
     </section>
 
   <!-- LASORDA -->
   <div id="popups" class="popup">
     <div class="popup-content">
-      <span class="cerrar" onclick="cerrarPopup('popups')">&times;</span>
+      <span class="cerrar" onclick="cerrarPopup('popups')"><span class="material-symbols-outlined">close</span></span>
       <div class="popup-grid">
         <div class="popup-galeria">
           <img src="assets/fplsd.svg" alt="Imagen 1">
@@ -79,7 +84,7 @@
   <!-- Popup Proyecto 1 -->
   <div id="popup1" class="popup">
     <div class="popup-content">
-      <span class="cerrar" onclick="cerrarPopup('popup1')">&times;</span>
+      <span class="cerrar" onclick="cerrarPopup('popup1')"><span class="material-symbols-outlined">close</span></span>
       <div class="popup-grid">
         <div class="popup-galeria">
           <img src="assets/hero-vector.svg" alt="Imagen 1">
@@ -129,7 +134,7 @@
           <input type="text" name="name" placeholder="Nombre" required>
           <input type="email" name="email" placeholder="Correo electrónico" required>
           <textarea name="message" rows="3" placeholder="Mensaje" required></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit"><span class="material-symbols-outlined">send</span></button>
         </form>
       </div>
     </div>
