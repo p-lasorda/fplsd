@@ -99,7 +99,7 @@ tr:first-child {
 }
 
 .material-symbols-outlined {
-  margin-right: 0.3rem;
+  margin-right: 0.4rem;
   font-size: 20px;
 }
 
@@ -482,6 +482,7 @@ tr:first-child {
   margin-bottom: 5px;
   filter: brightness(0) invert(1);*/
   font-size: 20px;
+  vertical-align: bottom;
 }
 
 /* === Popup === */
