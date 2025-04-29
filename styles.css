@@ -35,6 +35,8 @@ h3 {
 ul {
   font-size: 0.7rem;
   list-style-position: outside;
+  padding-left: 15px;
+  margin: 0;
 }
 
 
@@ -166,12 +168,13 @@ tr:first-child {
 
 .item3 {
   background-image: url('assets/ps03.jpg');
-  width: 165px;
+  width: 346px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 
 .item4 {
@@ -186,16 +189,13 @@ tr:first-child {
 
 .item5 {
   background-image: url('assets/ps05.jpg');
-  width: 346px;
+  width: 165px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  grid-column: span 2;
 }
-
-
 
 .item6 {
   background-image: url('assets/ps06.jpg');
@@ -241,34 +241,33 @@ tr:first-child {
 
 .item10 {
   background-image: url('assets/ps10.jpg');
-  width: 346px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-}
-
-.item11 {
-  background-image: url('assets/ps11.jpg');
-  width: 346px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-}
-
-.item12 {
-  background-image: url('assets/ps12.jpg');
   width: 165px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+}
+
+.item11 {
+  background-image: url('assets/ps11.jpg');
+  width: 165px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.item12 {
+  background-image: url('assets/ps12.jpg');
+  width: 346px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
 }
 
 .item13 {
@@ -313,56 +312,46 @@ tr:first-child {
 
 .item17 {
   background-image: url('assets/ps17.jpg');
-  width: 165px;
+  width: 346px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 
 .item18 {
   background-image: url('assets/ps18.jpg');
-  width: 346px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-}
-.item19 {
-  background-image: url('assets/ps19.jpg');
-  width: 346px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-}
-.item20 {
-  background-image: url('assets/ps20.jpg');
   width: 165px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+}
+.item19 {
+  background-image: url('assets/ps19.jpg');
+  width: 165px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.item20 {
+  background-image: url('assets/ps20.jpg');
+  width: 346px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
 }
 
 .item21 {
   background-image: url('assets/ps21.jpg');
-  width: 165px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
-
-.item22 {
-  background-image: url('assets/ps22.jpg');
   width: 346px;
   height: 150px;
   background-position: center;
@@ -370,6 +359,16 @@ tr:first-child {
   display: flex;
   flex-direction: column;
   grid-column: span 2;
+}
+
+.item22 {
+  background-image: url('assets/ps22.jpg');
+  width: 165px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .item23 {
@@ -384,16 +383,6 @@ tr:first-child {
 
 .item24 {
   background-image: url('assets/ps24.jpg');
-  width: 165px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
-
-.item25 {
-  background-image: url('assets/ps25.jpg');
   width: 346px;
   height: 150px;
   background-position: center;
@@ -401,6 +390,16 @@ tr:first-child {
   display: flex;
   flex-direction: column;
   grid-column: span 2;
+}
+
+.item25 {
+  background-image: url('assets/ps25.jpg');
+  width: 165px;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
 .item26 {
@@ -435,12 +434,13 @@ tr:first-child {
 
 .item29 {
   background-image: url('assets/ps29.jpg');
-  width: 165px;
+  width: 346px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 
 .item30 {
@@ -456,17 +456,6 @@ tr:first-child {
 
 .item31 {
   background-image: url('assets/ps31.jpg');
-  width: 346px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  grid-column: span 2;
-}
-
-.item32 {
-  background-image: url('assets/ps32.jpg');
   width: 165px;
   height: 150px;
   background-position: center;
@@ -475,15 +464,6 @@ tr:first-child {
   flex-direction: column;
 }
 
-.item33 {
-  background-image: url('assets/ps33.jpg');
-  width: 165px;
-  height: 150px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-}
 
 .project-info {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
@@ -621,6 +601,7 @@ border-radius: 0.5rem;
   color: #fff;
 }
 
+
 .acordeon-footer summary {
   cursor: pointer;
   list-style: none;
@@ -695,7 +676,7 @@ border-radius: 0.5rem;
 .formulario button {
   width: 39px;
   color: #fff;
-  padding: 5px 4px 4px 7px;
+  padding: 5px 5px 3px 7px;
   border: 2px solid #fff;
   cursor: pointer;
   border-radius: 2rem;
