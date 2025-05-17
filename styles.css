@@ -516,7 +516,7 @@ vertical-align: bottom;
 .popup-content {
   background-color: #fff;
   margin: 5% auto;
-  padding: 0.2rem;
+  padding: 0;
   border-radius: 3px;
   max-width: 1000px;
   width: 95%;
