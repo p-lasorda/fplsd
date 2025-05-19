@@ -7,8 +7,8 @@ h1 {
   font-family: "Sora", sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  line-height: 2.3rem;
-  margin: 0px;
+  line-height: 1;
+  margin-bottom: 0px;
 }
 h2 {  
   font-family: "Sora", sans-serif;
@@ -516,7 +516,7 @@ vertical-align: bottom;
 .popup-content {
   background-color: #fff;
   margin: 5% auto;
-  padding: 0;
+  padding: 0.2rem;
   border-radius: 3px;
   max-width: 1000px;
   width: 95%;
@@ -525,6 +525,7 @@ vertical-align: bottom;
   animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Botón cerrar popup */
 .cerrar {
   position: absolute;
   top: 0.5rem;
@@ -532,12 +533,16 @@ vertical-align: bottom;
   font-size: 1.5rem;
   cursor: pointer;
   color: #a5a5a5;
+  background: none;
+  border: none;
+  transition: background 0.2s;
 }
 
 .cerrar:hover {
-  background: #ffffff;
+  background: #fff;
 }
 
+/* Grid del popup */
 .popup-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -545,9 +550,12 @@ vertical-align: bottom;
   align-items: flex-start;
 }
 
+/* Galería de imágenes en el popup */
 .popup-galeria {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 .popup-galeria img {
@@ -555,38 +563,40 @@ vertical-align: bottom;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
+/* Títulos dentro del popup */
 .popup-texto h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.popup-texto {
-margin: 2rem;
-}
 
+/* Ajuste general para el texto del popup */
 .popup-texto {
-  font-size: 0.9rem;
+  margin: 2rem;
+  font-size: 0.8rem;
   color: #444;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
 }
-/* === Destacados === */
 
+/* === Destacados === */
 .destacados {
-display: flex;
-flex-wrap: wrap;
-gap: 1.5rem;
-margin-top: 3rem;
-background-color: #000;
-padding: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  background-color: #000;
+  padding: 1.2rem;
 }
 
 .destacados .caja {
-flex: 1 1 245px;
-background: #000;
-padding: 1rem;
-color: #fff;
--webkit-box-shadow: 0 4px 6px -6px #a5a5a5;
--moz-box-shadow: 0 4px 6px -6px #a5a5a5;
-box-shadow: 0 4px 6px -6px #a5a5a5;
+  flex: 1 1 245px;
+  background: #000;
+  padding: 1rem;
+  color: #fff;
+  -webkit-box-shadow: 0 4px 6px -6px #a5a5a5;
+  -moz-box-shadow: 0 4px 6px -6px #a5a5a5;
+  box-shadow: 0 4px 6px -6px #a5a5a5;
+  font-size: 0.7rem;
+  line-height: 1.1rem;
 }
 
 .destacados .caja .caja-texto {
@@ -594,15 +604,12 @@ box-shadow: 0 4px 6px -6px #a5a5a5;
   line-height: 1.1rem;
   margin-top: 1rem;
 }
+
 .destacados .caja .caja-texto a {
   display: block;
   margin-top: 1rem;
   color: #fff;
   text-decoration: none;
-}
-.destacados .caja {
-  font-size: 0.7rem;
-  line-height: 1.1rem;
 }
 
 /* === footer === */
@@ -613,7 +620,6 @@ box-shadow: 0 4px 6px -6px #a5a5a5;
   background: #000;
   color: #fff;
 }
-
 
 /* === Responsive === */
 @media (max-width: 768px) {
