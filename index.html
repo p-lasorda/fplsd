@@ -13,16 +13,23 @@
   <link rel="manifest" href="assets/site.webmanifest">
 </head>
 <body>
-
   <!-- Navegación -->
   <header class="navbar">
     <div class="navbar-container">
-      <div class="logo" onclick="abrirPopup('popups')"><img src="assets/fplsd-cara2-24.svg" alt="La Sorda" /></a><h3>LA SORDA</h3></div>
-      <!--<div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
+      <div class="logo" onclick="abrirPopup('popups')">
+        <img src="assets/fplsd-cara2-24.svg" alt="La Sorda" />
+        <h3>LA SORDA</h3>
+      </div>
+      <a href="https://www.instagram.com/publicaciones_lasorda/" target="_blank">
+        <img src="assets/icons8-instagram.svg" alt="Instagram La Sorda" />
+      </a>
+      <!--
+      <div style="font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 48;">
         <div class="tooltip"><span class="material-symbols-outlined">menu_book</span><span class="tooltiptext">Proyectos editoriales<br>La Sorda suelta libros para que viajen ligeros, de mano en mano, sin mapas ni prisas.</span></div>
         <div class="tooltip"><span class="material-symbols-outlined">web_traffic</span><span class="tooltiptext">Proyectos web<br>La Sorda abre caminos digitales: páginas para perderse, encontrarse y compartir.</span></div>
         <div class="tooltip"><span class="material-symbols-outlined">deployed_code</span><span class="tooltiptext">Proyectos expositivos<br>La Sorda levanta refugios temporales: exposiciones para mirar, habitar y recordar.</span></div>
-      </div>-->
+      </div>
+      -->
     </div>
   </header>
 <!-- Galeria -->
@@ -62,7 +69,7 @@
 
   <!-- LASORDA -->
   <div id="popups" class="popup">
-    <div class="popup-content">
+    <div class="popup-content" aria-modal="true" tabindex="-1">
       <span class="cerrar" onclick="cerrarPopup('popups')"><span class="material-symbols-outlined">close</span></span>
       <div class="popup-grid">
         <div class="popup-galeria">
@@ -1097,72 +1104,85 @@
   </div>
 </div>
 
-<!-- Sección Destacados -->
-<section class="destacados">
-
-<div class="caja">
-<h3>La Sorda habla</h3><p>con las manos, se expresa mediante</p>
-<table class="table1">
-<col style="width:20%">
-<col style="width:80%">
-<tr><td><span class="material-symbols-outlined">menu_book</span></td><td><p class="teta1"><b>Proyectos editoriales</b> La Sorda suelta libros para que viajen ligeros, de mano en mano, sin mapas ni prisas.</p></td></tr>
-<tr><td><span class="material-symbols-outlined">web_traffic</span></td><td><p class="teta1"><b>Proyectos web</b> La Sorda abre caminos digitales: páginas para perderse, encontrarse y compartir.</p></td></tr>
-<tr><td><span class="material-symbols-outlined">deployed_code</span></td><td><p class="teta1"><b>Proyectos expositivos</b> La Sorda levanta refugios temporales: exposiciones para mirar, habitar y recordar.</p></td></tr>
-</table>
-</div>
-  <div class="caja">
+  <!-- Sección Destacados -->
+  <section class="destacados">
+    <div class="caja">
+      <h3>La Sorda habla</h3>
+      <p>con las manos, se expresa mediante</p>
+      <table class="table1">
+        <col style="width:20%">
+        <col style="width:80%">
+        <tr>
+          <td><span class="material-symbols-outlined">menu_book</span></td>
+          <td><p class="teta1"><b>Proyectos editoriales</b> La Sorda suelta libros para que viajen ligeros, de mano en mano, sin mapas ni prisas.</p></td>
+        </tr>
+        <tr>
+          <td><span class="material-symbols-outlined">web_traffic</span></td>
+          <td><p class="teta1"><b>Proyectos web</b> La Sorda abre caminos digitales: páginas para perderse, encontrarse y compartir.</p></td>
+        </tr>
+        <tr>
+          <td><span class="material-symbols-outlined">deployed_code</span></td>
+          <td><p class="teta1"><b>Proyectos expositivos</b> La Sorda levanta refugios temporales: exposiciones para mirar, habitar y recordar.</p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="caja">
       <h3>La Sorda no va sola</h3>
       <p>Anda en buena compañía. Ha trenzado caminos con editoras, artistas, tejedoras, curadoras, colectivos, organizaciones, espacios e instituciones que entienden <b>la creación como un gesto colectivo</b>, que creen en lo común. Juntas hemos hecho libros que viajan, sitios web que respiran y exposiciones que cobijan. Cada encuentro ha sido una forma de <b>escuchar con las manos</b> y hablar con el hacer. Algunas de estas aliadas son: Mapa teatro, Comisión de la Verdad, Comunidad de prácticas pedagogicas, Fundación Colombia Diversa, Facultad de Artes, Universidad Nacional de Colombia, Sede Bogotá.</p>
     </div>
     <div class="caja">
       <h3>Convocatoria</h3>
       <p>Se les quiere invitar a que se hagan cargo. Pueden decir lo que tienen que decir. Mejor decirlo antes de olvidarlo. <b>Será bienvenido todo tipo de material.</b> Para mayor información, dirigirse a las condiciones de participación. Háganos llegar su propuesta con las siguientes características:</p>
-        <ul>
+      <ul>
         <li>Datos del autor(es) y fecha de elaboración.</li>
         <li>Título y descripción general de la propuesta.</li>
         <li>Contenido detallado de la propuesta.</li>
-        </ul>
-<div class="acordeon">
-  <div class="acordeon-item">
-    <input type="checkbox" id="item1">
-    <label for="item1">Términos y condiciones</label>
-    <div class="contenido">
-      <p><b>1. Naturaleza del proyecto</b> La Sorda (NIT 901.034.693-9) es un proyecto independiente, iniciado en Bogotá en 2014. <b>2. Derechos de autor</b> Los derechos de los contenidos publicados pertenecen a sus autores. 2.1. Todo el material publicado está bajo licencia Creative Commons: Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0). <b>3. Uso de contenidos</b> Los textos pueden ser utilizados libremente con fines educativos, académicos y culturales, siempre que se cite la fuente y no se usen con fines comerciales. <b>4. Uso de la plataforma</b> Está prohibido modificar, copiar o reproducir los contenidos del sitio con fines de lucro. <b>5. Permanencia de contenidos</b> El material (textos, imágenes, datos del autor) podrá retirarse o modificarse por solicitud, salvo que estén vinculados a un deber legal o contractual. <b>6. Datos de los autores</b> No compartimos, ni utilizamos con fines comerciales los datos aportados por los autores como títulos, índices, teléfonos, direcciones o fotos. <b>7. Responsabilidad de uso</b> La Sorda no se responsabiliza por el uso indebido del sitio ni por daños derivados de acciones de terceros. <b>8. Distribución</b> Fomentamos el acceso libre y solidario a los contenidos. Los libros se pueden descargar, regalar o compartir.<b>Servicio mantenido por La Sorda y alojado en GitHub. Contáctanos para comentarios o preguntas.</b></p>
-    </div>
-  </div>
-</div>
+      </ul>
+      <div class="acordeon">
+        <div class="acordeon-item">
+          <input type="checkbox" id="item1">
+          <label for="item1">Términos y condiciones</label>
+          <div class="contenido">
+            <p><b>1. Naturaleza del proyecto</b> La Sorda (NIT 901.034.693-9) es un proyecto independiente, iniciado en Bogotá en 2014. <b>2. Derechos de autor</b> Los derechos de los contenidos publicados pertenecen a sus autores. 2.1. Todo el material publicado está bajo licencia Creative Commons: Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0). <b>3. Uso de contenidos</b> Los textos pueden ser utilizados libremente con fines educativos, académicos y culturales, siempre que se cite la fuente y no se usen con fines comerciales. <b>4. Uso de la plataforma</b> Está prohibido modificar, copiar o reproducir los contenidos del sitio con fines de lucro. <b>5. Permanencia de contenidos</b> El material (textos, imágenes, datos del autor) podrá retirarse o modificarse por solicitud, salvo que estén vinculados a un deber legal o contractual. <b>6. Datos de los autores</b> No compartimos, ni utilizamos con fines comerciales los datos aportados por los autores como títulos, índices, teléfonos, direcciones o fotos. <b>7. Responsabilidad de uso</b> La Sorda no se responsabiliza por el uso indebido del sitio ni por daños derivados de acciones de terceros. <b>8. Distribución</b> Fomentamos el acceso libre y solidario a los contenidos. Los libros se pueden descargar, regalar o compartir.<b>Servicio mantenido por La Sorda y alojado en GitHub. Contáctanos para comentarios o preguntas.</b></p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="caja">
       <h3>Contacto</h3>
       <p>Existen muchas formas de colaborar con La Sorda. Puedes presentar material por medio de la convocatoria permanente o proponiendo actividades, discusiones, dándonos ideas, opiniones o también puedes apoyarnos donando tiempo y/o dinero para la impresión de cada publicación.</p>
       <div class="formulario">
         <form action="https://formsubmit.co/info@publicacioneslasorda.org" method="POST">
-          <!--<input type="text" name="name" placeholder="Nombre" required>
-          <input type="email" name="email" placeholder="Correo electrónico" required>-->
+          <!--
+          <input type="text" name="name" placeholder="Nombre" required>
+          <input type="email" name="email" placeholder="Correo electrónico" required>
+          -->
           <textarea name="message" rows="3" placeholder="Mensaje" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </div>
     </div>
-</section>
-<!-- Footer -->
-<div class="footer">
-  <p><b>info@publicacioneslasorda.org</b><br>Fundación Publicaciones La Sorda&#10072;Bogotá, Colombia&#10072;2025</p>
-</div>
-<!-- Scripts -->
-<script>
-  // Popup functionality
-  function abrirPopup(id) {
-    document.getElementById(id).style.display = 'block';
-  }
-  function cerrarPopup(id) {
-    document.getElementById(id).style.display = 'none';
-  }
-  window.onclick = function(event) {
-    if (event.target.classList.contains('popup')) {
-      event.target.style.display = "none";
+  </section>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p><b>info@publicacioneslasorda.org</b><br>Fundación Publicaciones La Sorda&#10072;Bogotá, Colombia&#10072;2025</p>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Popup functionality
+    function abrirPopup(id) {
+      document.getElementById(id).style.display = 'block';
     }
-  }
-</script>
+    function cerrarPopup(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+    window.onclick = function(event) {
+      if (event.target.classList.contains('popup')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
