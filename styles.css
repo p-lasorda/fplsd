@@ -7,7 +7,7 @@ h1 {
   font-family: "Sora", sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 1;
   margin-bottom: 0px;
 }
 h2 {  
@@ -108,7 +108,7 @@ margin: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  max-width: 1412px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -154,13 +154,16 @@ margin: 0px;
 }
 
 .galeria {
-  margin-top: 100px;
+          margin: 7rem auto 0 auto;
+    max-width: 1412px;
+    padding-top: 0rem;
+  padding: 15px;
   resize: both;
   overflow: auto;
   display: grid;
   gap: 0.8rem;
   row-gap: 0.8rem;
-  padding: 15px;
+  
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
 }
@@ -516,7 +519,7 @@ vertical-align: bottom;
 .popup-content {
   background-color: #fff;
   margin: 5% auto;
-  padding: 0rem;
+  padding: 0.2rem;
   border-radius: 3px;
   max-width: 1000px;
   width: 95%;
@@ -554,8 +557,8 @@ vertical-align: bottom;
 .popup-galeria {
   display: flex;
   flex-direction: column;
-  gap: 0rem;
-  margin: 0rem;
+  gap: 1rem;
+  margin: 1rem;
 }
 
 .popup-galeria img {
@@ -581,10 +584,11 @@ vertical-align: bottom;
 .destacados {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 3rem;
   margin-top: 3rem;
   background-color: #000;
-  padding: 1.2rem;
+  padding: 1.2rem 15rem;
+  
 }
 
 .destacados .caja {
@@ -622,9 +626,18 @@ vertical-align: bottom;
 }
 
 /* === Responsive === */
+
 @media (max-width: 768px) {
+
+  .galeria{
+margin-top: 100px;
+  padding: 15px;
+  }
+
   .destacados {
     flex-direction: column;
+    padding: 1.2rem;
+    gap: 1rem;
   }
 
   .imagen {
@@ -649,6 +662,7 @@ vertical-align: bottom;
     top: 10px;
     right: 10px;
   }
+ 
 }
  
 /* === Formulario === */
