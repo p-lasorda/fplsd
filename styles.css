@@ -580,12 +580,12 @@ vertical-align: bottom;
 
 /* === Destacados === */
 .destacados {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 3rem;
-  background-color: #000;
-  padding: 1.2rem 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    background-color: #000;
+    padding: 1.2rem 15rem;
   
 }
 
