@@ -78,11 +78,10 @@ tr:first-child {
 
 .table1 {
   height: auto;
-  margin-top: 0.5rem;
-  
 }
+
 table.table1 tr {
-  border-top: 5px solid #000;
+  border-top: 5px solid #111;
 }
 table.table1 td {
   color:  #fff;
@@ -157,8 +156,7 @@ margin: 0px;
 .galeria {
   margin: 7rem auto 0 auto;
   max-width: 1070px;
-  padding-top: 0rem;
-  padding: 15px;
+  padding: 15px 15px 50px 15px;
   resize: both;
   overflow: auto;
   display: grid;
@@ -578,49 +576,16 @@ vertical-align: bottom;
   line-height: 1.6rem;
 }
 
-/* === Destacados === */
-.destacados {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 2rem;
-    background-color: #000;
-    padding: 1.2rem 15rem;
-  
-}
-
-.destacados .caja {
-  flex: 1 1 230px;
-  background: #000;
-  padding: 1rem;
-  color: #fff;
-  -webkit-box-shadow: 0 4px 6px -6px #a5a5a5;
-  -moz-box-shadow: 0 4px 6px -6px #a5a5a5;
-  box-shadow: 0 4px 6px -6px #a5a5a5;
-  font-size: 0.7rem;
-  line-height: 1.1rem;
-}
-
-.destacados .caja .caja-texto {
-  font-size: 0.7rem;
-  line-height: 1.1rem;
-  margin-top: 1rem;
-}
-
-.destacados .caja .caja-texto a {
-  display: block;
-  margin-top: 1rem;
-  color: #fff;
-  text-decoration: none;
-}
 
 /* === footer === */
-.footer {
+.foot {
   text-align: center;
-  padding: 5px;
-  font-size: 0.7rem;
-  background: #000;
-  color: #fff;
+  background-color: #111;
+color: #ccc;
+padding: 1rem 1.5rem;
+font-family: 'Helvetica Neue', sans-serif;
+font-size: 0.7rem;
+line-height: 1.5;
 }
 
 /* === Responsive === */
@@ -630,12 +595,6 @@ vertical-align: bottom;
   .galeria{
 margin-top: 100px;
   padding: 15px;
-  }
-
-  .destacados {
-    flex-direction: column;
-    padding: 1.2rem;
-    gap: 1rem;
   }
 
   .imagen {
@@ -685,18 +644,18 @@ margin-top: 100px;
 }
 
 .formulario button {
-  width: 60px;
-  color: #fff;
-  padding: 6px;
-  border: 1px solid #fff;
-  cursor: pointer;
-  background-color: #000;
-  margin-top: 5px;
-  font-size: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
+width: 60px;
+color: #ddd;
+padding: 6px;
+border: 2px solid #ddd;
+cursor: pointer;
+background-color: #111;
+margin-top: 5px;
+font-size: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 15px;
 }
 
 .formulario button:hover {
@@ -721,9 +680,9 @@ margin-top: 100px;
 
     .acordeon label {
       display: block;
-      padding-top: 15px;
+      padding-top: 10px;
       cursor: pointer;
-      font-weight: bold;
+    color: #f3f3f3;
     }
 
     .acordeon .contenido {
@@ -741,3 +700,54 @@ margin-top: 100px;
       line-height: 0.8rem;
 
     }
+
+footer {
+  background-color: #111;
+  color: #f3f3f3;
+  padding: 1rem 1.5rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.7;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-block {
+  flex: 1 1 200px; /* mínimo 200px por bloque */
+  max-width: 260px;
+  -webkit-box-shadow: 0 4px 6px -6px #a5a5a5;
+-moz-box-shadow: 0 4px 6px -6px #a5a5a5;
+box-shadow: 0 4px 6px -6px #a5a5a5;
+padding-bottom: 1rem;
+}
+
+.footer-block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-block p {
+  color: #ccc;
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-block {
+    max-width: 100%;
+  }
+}
