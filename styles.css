@@ -639,8 +639,8 @@ margin-top: 100px;
   font-family: 'Open Sans', sans-serif;
   font-size: 0.8rem;
   border:none;
-  background-color: black;
-  color: #fff;
+  background-color: #111;
+  color: #ccc;
 }
 
 .formulario button {
@@ -722,9 +722,6 @@ footer {
 .footer-block {
   flex: 1 1 200px; /* mínimo 200px por bloque */
   max-width: 260px;
-  -webkit-box-shadow: 0 4px 6px -6px #a5a5a5;
--moz-box-shadow: 0 4px 6px -6px #a5a5a5;
-box-shadow: 0 4px 6px -6px #a5a5a5;
 padding-bottom: 1rem;
 }
 
