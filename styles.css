@@ -63,18 +63,14 @@ table {
 table, td {
   border: none !important;
   color: #757575;
-  padding: 3px;
-  line-height: 1.6;
+  padding: 1px;
+  line-height: 1.5;
   vertical-align: baseline;
 }
 
 table, tr {
   border-top: 1px solid #ddd;
 }
-tr:first-child {
-  border-top: none;
-}
-
 
 .table1 {
   height: auto;
@@ -486,9 +482,8 @@ margin: 0px;
 
 
 .project-info {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #757575 100%);;
   color: white;
-  padding: 0.4rem;
+  padding: 0.2rem 0.4rem;
   font-size: 0.7rem;
   margin: 119px 0px 0px 0px;
   margin-top: auto;
@@ -496,12 +491,7 @@ margin: 0px;
 
 
 .project-info .material-symbols-outlined {
-  /*border:1px solid white;
-  border-radius:20px;
-  padding:5px;
-  margin-bottom: 5px;
-  filter: brightness(0) invert(1);*/
-font-size: 20px;
+font-size: 18px;
 vertical-align: bottom;
 }
 
@@ -722,7 +712,6 @@ footer {
 .footer-block {
   flex: 1 1 200px; /* mínimo 200px por bloque */
   max-width: 260px;
-padding-bottom: 1rem;
 }
 
 .footer-block h3 {
